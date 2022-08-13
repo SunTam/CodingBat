@@ -4,8 +4,17 @@ so the String "Hello" yields "He". If the string is shorter than length 2,
 return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
 
 '''
+
+'''
 def first_two(str):
-    first_two = str[0:2]
-    return print(first_two)
+  if len(str)>=2 :
+    return str[:2]
+  else:
+    return str
+'''
+
+def first_two(str):
+  return print(str[0:2] if len(str)>=2 else str) 
 
 first_two('sunil')
+    
